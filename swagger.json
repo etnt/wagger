@@ -1,0 +1,1831 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "key",
+    "description": "",
+    "version": "2024-08-28"
+  },
+  "host": "127.0.0.1:9080",
+  "basePath": "/restconf",
+  "tags": [
+    {
+      "name": "root",
+      "description": "root resources"
+    },
+    {
+      "name": "operations",
+      "description": "operations resources"
+    },
+    {
+      "name": "data",
+      "description": "data resources"
+    },
+    {
+      "name": "get",
+      "description": "get resources"
+    },
+    {
+      "name": "post",
+      "description": "post resources"
+    },
+    {
+      "name": "patch",
+      "description": "patch resources"
+    },
+    {
+      "name": "put",
+      "description": "put resources"
+    },
+    {
+      "name": "delete",
+      "description": "delete resources"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "produces": [
+    "application/yang-data+json"
+  ],
+  "consumes": [
+    "application/yang-data+json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "root",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "root_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/root"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/operations": {
+      "get": {
+        "tags": [
+          "operations",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "operations_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/operations"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/yang-library-version": {
+      "get": {
+        "tags": [
+          "yang-library-version",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "yang_library_version_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/yang-library-version"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/data": {
+      "get": {
+        "tags": [
+          "data",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/data"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "data",
+          "post"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_post",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/data-post"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "data",
+          "put"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_put",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/data-put-patch"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "data",
+          "patch"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_patch",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/data-put-patch"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/data/key:top": {
+    },
+    "/data/key:top={top-name},{top-surname}": {
+      "get": {
+        "tags": [
+          "data",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/content"
+          },
+          {
+            "$ref": "#/parameters/depth"
+          },
+          {
+            "$ref": "#/parameters/fields"
+          },
+          {
+            "$ref": "#/parameters/filter"
+          },
+          {
+            "$ref": "#/parameters/with-defaults"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/data_key_top_top-name_top-surname"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "data",
+          "put"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_put",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname"
+          },
+          {
+            "$ref": "#/parameters/insert"
+          },
+          {
+            "$ref": "#/parameters/point"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "list top created or replaced"
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "data",
+          "patch"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_patch",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "list top updated"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "data",
+          "delete"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_delete",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/responses/204"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/data/key:top={top-name},{top-surname}/name": {
+      "get": {
+        "tags": [
+          "data",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_name_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/content"
+          },
+          {
+            "$ref": "#/parameters/depth"
+          },
+          {
+            "$ref": "#/parameters/fields"
+          },
+          {
+            "$ref": "#/parameters/filter"
+          },
+          {
+            "$ref": "#/parameters/with-defaults"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/data_key_top_top-name_top-surname_name"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "data",
+          "put"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_name_put",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_name"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "leaf name created or replaced"
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "data",
+          "patch"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_name_patch",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_name"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "leaf name updated"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "data",
+          "delete"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_name_delete",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/responses/204"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/data/key:top={top-name},{top-surname}/surname": {
+      "get": {
+        "tags": [
+          "data",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_surname_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/content"
+          },
+          {
+            "$ref": "#/parameters/depth"
+          },
+          {
+            "$ref": "#/parameters/fields"
+          },
+          {
+            "$ref": "#/parameters/filter"
+          },
+          {
+            "$ref": "#/parameters/with-defaults"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/data_key_top_top-name_top-surname_surname"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "data",
+          "put"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_surname_put",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_surname"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "leaf surname created or replaced"
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "data",
+          "patch"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_surname_patch",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "leaf surname updated"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "data",
+          "delete"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_surname_delete",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/responses/204"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/data/key:top={top-name},{top-surname}/age": {
+      "get": {
+        "tags": [
+          "data",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_age_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/content"
+          },
+          {
+            "$ref": "#/parameters/depth"
+          },
+          {
+            "$ref": "#/parameters/fields"
+          },
+          {
+            "$ref": "#/parameters/filter"
+          },
+          {
+            "$ref": "#/parameters/with-defaults"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/data_key_top_top-name_top-surname_age"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "data",
+          "put"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_age_put",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_age"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "leaf age created or replaced"
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "data",
+          "patch"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_age_patch",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_age"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "leaf age updated"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "data",
+          "delete"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_age_delete",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/responses/204"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/data/key:top={top-name},{top-surname}/shoe-size": {
+      "get": {
+        "tags": [
+          "data",
+          "get"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_shoe_size_get",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/content"
+          },
+          {
+            "$ref": "#/parameters/depth"
+          },
+          {
+            "$ref": "#/parameters/fields"
+          },
+          {
+            "$ref": "#/parameters/filter"
+          },
+          {
+            "$ref": "#/parameters/with-defaults"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/data_key_top_top-name_top-surname_shoe-size"
+            }
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "data",
+          "put"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_shoe_size_put",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_shoe-size"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "leaf shoe-size created or replaced"
+          },
+          "204": {
+            "$ref": "#/responses/204"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": [
+          "data",
+          "patch"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_shoe_size_patch",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          },
+          {
+            "$ref": "#/parameters/data_key_top_top-name_top-surname_shoe-size"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "leaf shoe-size updated"
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "404": {
+            "$ref": "#/responses/404"
+          },
+          "405": {
+            "$ref": "#/responses/405"
+          },
+          "409": {
+            "$ref": "#/responses/409"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "data",
+          "delete"
+        ],
+        "summary": "-",
+        "description": "",
+        "operationId": "data_key_top_top_name_top_surname_shoe_size_delete",
+        "produces": [
+          "application/yang-data+json"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/parameters/top-name"
+          },
+          {
+            "$ref": "#/parameters/top-surname"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/responses/204"
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "content": {
+      "name": "content",
+      "in": "query",
+      "description": "controlling descendant nodes in response",
+      "required": false,
+      "type": "string",
+      "format": "enumeration",
+      "default": "config",
+      "enum": [
+        "config",
+        "nonconfig",
+        "all"
+      ]
+    },
+    "depth": {
+      "name": "depth",
+      "in": "query",
+      "description": "limit the depth of nodes in response",
+      "required": false,
+      "type": "integer",
+      "format": "uint16"
+    },
+    "fields": {
+      "name": "fields",
+      "in": "query",
+      "description": "optionally identify specific data nodes in response",
+      "required": false,
+      "type": "string",
+      "format": "string"
+    },
+    "filter": {
+      "name": "filter",
+      "in": "query",
+      "description": "xpath expression to filter data nodes in response",
+      "required": false,
+      "type": "string",
+      "format": "string"
+    },
+    "with-defaults": {
+      "name": "with-defaults",
+      "in": "query",
+      "description": "controlling default values in response",
+      "required": false,
+      "type": "string",
+      "format": "enumeration",
+      "default": "report-all",
+      "enum": [
+        "report-all",
+        "trim",
+        "explicit",
+        "report-all-tagged"
+      ]
+    },
+    "insert": {
+      "name": "insert",
+      "in": "query",
+      "description": "controlling the order when adding new list elements",
+      "required": false,
+      "type": "string",
+      "format": "enumeration",
+      "default": "first",
+      "enum": [
+        "first",
+        "last",
+        "before",
+        "after"
+      ]
+    },
+    "point": {
+      "name": "point",
+      "in": "query",
+      "description": "used to specify the insertion point",
+      "required": false,
+      "type": "string",
+      "format": "string"
+    },
+    "data-post": {
+      "name": "data",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data-post"
+      }
+    },
+    "data-put-patch": {
+      "name": "data",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data-put-patch"
+      }
+    },
+    "data_key_top_top-name_top-surname": {
+      "name": "top",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data_key_top_top-name_top-surname"
+      }
+    },
+    "data_key_top_top-name_top-surname_age": {
+      "name": "age",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data_key_top_top-name_top-surname_age"
+      }
+    },
+    "data_key_top_top-name_top-surname_name": {
+      "name": "name",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data_key_top_top-name_top-surname_name"
+      }
+    },
+    "data_key_top_top-name_top-surname_shoe-size": {
+      "name": "shoe-size",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data_key_top_top-name_top-surname_shoe-size"
+      }
+    },
+    "data_key_top_top-name_top-surname_surname": {
+      "name": "surname",
+      "in": "body",
+      "description": "",
+      "required": true,
+      "schema": {
+        "$ref": "#/definitions/data_key_top_top-name_top-surname_surname"
+      }
+    },
+    "top-name": {
+      "name": "top-name",
+      "in": "path",
+      "description": "",
+      "required": true,
+      "type": "string",
+      "format": "string"
+    },
+    "top-surname": {
+      "name": "top-surname",
+      "in": "path",
+      "description": "",
+      "required": true,
+      "type": "string",
+      "format": "string"
+    }
+  },
+  "responses": {
+    "200": {
+      "description": "OK"
+    },
+    "201": {
+      "description": "Created"
+    },
+    "204": {
+      "description": "No Content"
+    },
+    "400": {
+      "description": "Bad Request"
+    },
+    "401": {
+      "description": "Unauthorized"
+    },
+    "404": {
+      "description": "Not Found"
+    },
+    "405": {
+      "description": "Method Not Allowed"
+    },
+    "409": {
+      "description": "Conflict"
+    }
+  },
+  "securityDefinitions": {
+    "basicAuth": {
+      "type": "basic"
+    }
+  },
+  "definitions": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "ietf-restconf:data": {
+          "type": "object",
+          "description": "This resource represents the combined configuration and state data resources that can be accessed by a client and cannot be created or deleted by the client. See RESTCONF RFC 8040 for further information.",
+          "x-yang": {
+            "type": "datastore"
+          },
+          "properties": {
+          }
+        }
+      }
+    },
+    "data-post": {
+      "type": "object",
+      "properties": {
+        "key:top": {
+          "type": "array",
+          "description": "(list)",
+          "x-yang": {
+            "type": "list"
+          },
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "string",
+                "format": "string"
+              },
+              "surname": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "string",
+                "format": "string"
+              },
+              "age": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "integer",
+                "format": "byte"
+              },
+              "shoe-size": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "integer",
+                "format": "byte"
+              }
+            }
+          }
+        }
+      }
+    },
+    "data-put-patch": {
+      "type": "object",
+      "properties": {
+        "ietf-restconf:data": {
+          "description": "",
+          "type": "object",
+          "x-yang": {
+            "type": "datastore"
+          },
+          "properties": {
+            "key:top": {
+              "type": "array",
+              "description": "(list)",
+              "x-yang": {
+                "type": "list"
+              },
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "description": "(leaf)",
+                    "x-yang": {
+                      "type": "leaf"
+                    },
+                    "type": "string",
+                    "format": "string"
+                  },
+                  "surname": {
+                    "description": "(leaf)",
+                    "x-yang": {
+                      "type": "leaf"
+                    },
+                    "type": "string",
+                    "format": "string"
+                  },
+                  "age": {
+                    "description": "(leaf)",
+                    "x-yang": {
+                      "type": "leaf"
+                    },
+                    "type": "integer",
+                    "format": "byte"
+                  },
+                  "shoe-size": {
+                    "description": "(leaf)",
+                    "x-yang": {
+                      "type": "leaf"
+                    },
+                    "type": "integer",
+                    "format": "byte"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "data_key_top_top-name_top-surname": {
+      "type": "object",
+      "properties": {
+        "key:top": {
+          "type": "array",
+          "description": "(list)",
+          "x-yang": {
+            "type": "list"
+          },
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "string",
+                "format": "string"
+              },
+              "surname": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "string",
+                "format": "string"
+              },
+              "age": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "integer",
+                "format": "byte"
+              },
+              "shoe-size": {
+                "description": "(leaf)",
+                "x-yang": {
+                  "type": "leaf"
+                },
+                "type": "integer",
+                "format": "byte"
+              }
+            }
+          }
+        }
+      }
+    },
+    "data_key_top_top-name_top-surname_age": {
+      "type": "object",
+      "properties": {
+        "key:age": {
+          "description": "(leaf)",
+          "x-yang": {
+            "type": "leaf"
+          },
+          "type": "integer",
+          "format": "byte"
+        }
+      }
+    },
+    "data_key_top_top-name_top-surname_name": {
+      "type": "object",
+      "properties": {
+        "key:name": {
+          "description": "(leaf)",
+          "x-yang": {
+            "type": "leaf"
+          },
+          "type": "string",
+          "format": "string"
+        }
+      }
+    },
+    "data_key_top_top-name_top-surname_shoe-size": {
+      "type": "object",
+      "properties": {
+        "key:shoe-size": {
+          "description": "(leaf)",
+          "x-yang": {
+            "type": "leaf"
+          },
+          "type": "integer",
+          "format": "byte"
+        }
+      }
+    },
+    "data_key_top_top-name_top-surname_surname": {
+      "type": "object",
+      "properties": {
+        "key:surname": {
+          "description": "(leaf)",
+          "x-yang": {
+            "type": "leaf"
+          },
+          "type": "string",
+          "format": "string"
+        }
+      }
+    },
+    "operations": {
+      "type": "object",
+      "properties": {
+        "ietf-restconf:operations": {
+          "type": "object",
+          "x-yang": {
+            "type": "operations"
+          },
+          "description": "This resource is a container that provides access to the data-model-specific RPC operations supported by the server. See RESTCONF RFC 8040 for further information.",
+          "properties": {
+
+          }
+        }
+      }
+    },
+    "root": {
+      "type": "object",
+      "properties": {
+        "ietf-restconf:restconf": {
+          "type": "object",
+          "x-yang": {
+            "type": "root"
+          },
+          "description": "This is the RESTCONF root resource for the RESTCONF datastore and operation resources. See RESTCONF RFC 8040 for further information.",
+          "properties": {
+            "data": {
+              "type": "object",
+              "properties": {
+              }
+            },
+            "operations": {
+              "type": "object",
+              "properties": {
+              }
+            },
+            "yang-library-version": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "yang-library-version": {
+      "type": "object",
+      "properties": {
+        "ietf-restconf:yang-library-version": {
+          "type": "object",
+          "description": "This leaf identifies the revision date of the 'ietf-yang-library' YANG module that is implemented by this server. See RESTCONF RFC 8040 for further information.",
+          "x-yang": {
+            "type": "leaf"
+          },
+          "properties": {
+          }
+        }
+      }
+    }
+  }
+}
